@@ -49,6 +49,7 @@ function updateScrollbar() {
 function mousedown() {
     document.addEventListener('mousemove', handleDrag)
     document.addEventListener('mouseup', stopDrag)
+    event.preventDefault()
 }
 
 function handleDrag(event) {
@@ -58,7 +59,6 @@ function handleDrag(event) {
         behavior: "instant",
     })
     updateScrollbar()
-    event.preventDefault()
 }
 
 function stopDrag() {
