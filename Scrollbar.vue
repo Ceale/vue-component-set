@@ -44,8 +44,6 @@ function updateScrollbar() {
 
     thumb.style.height = thumbHeight + "%"
     thumb.style.top = thumbTop + "%"
-
-    console.log(`Scroll: ${scrollTop} / ${documentHeight} = ${scrollTop / documentHeight * 100}%`)
 }
 
 function mousedown() {
